@@ -5,7 +5,7 @@ const {
     Inbox,
     Contact,
     ChatInboxRoom
-} = require('../../controllers/inbox');
+} = require('../../controllers/Inbox');
 
 router.all('/*', authenticateUser, (req, res, next) => {
 	req.app.set('layout', 'layouts/admin');
